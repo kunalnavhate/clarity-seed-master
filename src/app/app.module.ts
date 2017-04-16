@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
+import { TreeModule } from 'angular-tree-component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from "./about/about.component";
         FormsModule,
         HttpModule,
         ClarityModule.forRoot(),
-        ROUTING
+        ROUTING,
+        TreeModule
     ],
     providers: [],
     bootstrap: [AppComponent]
